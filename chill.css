@@ -1,0 +1,385 @@
+/* start global rules  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-logo-button:hsl(171, 66%, 44%);
+    --color-button-2:hsl(233, 100%, 69%);
+    --p-main-color:hsl(210, 10%, 33%);
+    --footer:#f6f6f6;
+    --main-padding:50px;
+}
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+/* media  */
+
+  /* Small Screens */
+  
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+     
+    }
+  }
+ 
+
+  
+  /* Medium Screens */
+  
+  @media (min-width: 992px) {
+    .container {
+      width:970px;
+    }
+  }
+  
+  /* Large Screens */
+  
+  @media (min-width: 1200px) {
+      .container {
+          width: 1170px;
+      }
+      
+  }
+  
+  
+/* special component  */
+.heading {
+    text-align: center;
+   width: 90%;
+    margin: 0 auto 40px auto;
+}
+.special-heading {
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 30px;
+
+
+}
+.special-heading + p {
+    color: var(--p-main-color);
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    width: 90%;
+   margin: 0 auto;
+}
+
+/* end global rules  */
+/* start landing section  */
+.landing {
+    background-image: url(../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-color: #f6f6f6;
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landing .header {
+    
+    background-size: cover;
+}
+.landing .container {
+  
+}
+.landing .container .landing-content .logo {
+    margin-bottom: 70px;
+    text-align: center;
+   
+ }
+ .landing .container .landing-content .intro-text  {
+    margin: auto;
+    text-align: center;
+    width: 60%;
+  
+
+ }
+ .landing .container .landing-content .intro-text h1  {
+    font-size: 36px;
+    margin-bottom: 15px;
+    padding: 10px;
+  
+
+ }
+ .landing .container .landing-content .intro-text p  {
+    color: var(--p-main-color);
+    line-height: 1.6;
+  
+}
+.landing .container .landing-content .buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.landing .container .landing-content .buttons button{
+    border:none;
+    background: none;
+    box-shadow: 0px 1px 2px black;
+    
+}
+
+.landing .container .landing-content .buttons .ios {
+    background-color: var(--color-logo-button);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+
+
+}
+.landing .container .landing-content .buttons .mac{
+    background-color: var(--color-button-2);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+
+
+
+}
+@media (max-width:767px){
+    .landing .container .landing-content .intro-text {
+        width: 100%;
+    }
+    .landing .container .landing-content .intro-text h1  {
+        font-size: 30px;
+
+        margin-bottom: 15px;
+        padding: 10px;
+      
+    
+     }
+     .landing .container .landing-content .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .landing .container .landing-content .buttons button {
+        width: fit-content;
+    }
+
+}
+ /* end landing section  */
+ /* start features section  */
+ .features {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+  
+ }
+ .features .container .apple-image {
+    position: relative;
+  width: 100%;
+  
+ }
+ .features .container .apple-image img {
+    position: absolute;
+    max-width: 100%;
+    top: 40px;
+    left: -30px;
+   
+ }
+ .features .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+
+   
+ }
+ .features .container .feat {
+    margin-top: 60px;
+ }
+ .features .container .feat .data {
+    margin-bottom:60px;
+ }
+ .features .container .feat .data h3 {
+    margin-bottom: 10px;
+    
+ }
+ .features .container .feat .data h3 + p {
+    color: var(--p-main-color);
+    line-height: 1.6;
+
+ }
+ @media (max-width:767px) {
+    .features .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .features .container .apple-image {
+       
+       
+     }
+     .features .container .apple-image img {
+        position: relative;
+        left: 0;
+       
+       
+       
+     }
+ }
+ /* end features   */
+ /* start accsess  */
+ .access {
+    padding-top: 150px;
+    padding-bottom: var(--main-padding);
+    background-color: #f6f6f6;
+ }
+ .access .access-image {
+    text-align: center;
+    margin-top: 100px;
+ }
+ .access .access-image img {
+    max-width: 100%;
+ }
+/* end access  */
+/* start work section  */
+.work {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+.work .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+}
+.work .container  .work-data {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0 100px ;
+    gap: 20px;
+    text-align: center;
+    flex: 1;
+
+}
+.work .container  .work-data .box img {
+    margin-bottom: 30px;
+    
+}
+.work .container  .work-data .box h3 {
+    margin-bottom: 30px;
+
+}
+.work .container  .work-data .box p {
+    color: var(--p-main-color);
+    line-height: 1.6;
+
+}
+.work .container .work-images {
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+.work .container .work-images img {
+    margin-left: 60px;
+    margin-bottom: 60px;
+}
+.work .heading p {
+    width: 66%;
+}
+.work .buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.work .buttons button{
+    border:none;
+    background: none;
+    box-shadow: 0px 1px 2px black;
+    
+}
+
+.work .buttons .ios {
+    background-color: var(--color-logo-button);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+
+
+}
+.work  .buttons .mac{
+    background-color: var(--color-button-2);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+
+
+
+}
+@media (max-width:767px){
+    .work .container {
+        margin-left: 0x;
+    }
+    .work .container  .work-data {
+        flex-direction: column;
+    }
+    .work .container  .work-data .box {
+        margin-bottom: 30px;
+    }
+    .work .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .work .buttons button {
+        width: fit-content;
+    }
+    .work .container .work-images {
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+       
+
+}
+.work .container .work-images img {
+    margin-left: 0;
+    
+}
+}
+/* end work section  */
+/* start footer  */
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--footer);
+    padding-top: 10px;
+    
+}
+.footer .logo img {
+    width: 50px;
+}
+.footer .links a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 10px;
+    
+}
+.footer .social img {
+    margin-right: 25px;
+    cursor: pointer;
+}
+@media (max-width:767px) {
+    .footer {
+        flex-direction: column;
+        
+    } .footer .links a {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+/* end footer  */
